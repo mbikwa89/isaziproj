@@ -1,0 +1,5 @@
+Start with an appropriate base image. For instance, if you need a JDK, consider basing your image on the official openjdk image, rather than starting with a generic ubuntu image and installing openjdk as part of the Dockerfile.
+Use multistage builds
+Use CI/CD for testing and deployment
+Use volumes to store container data.
+Always run an NTP client on the Docker host and within each container process and sync them all to the same NTP server.
