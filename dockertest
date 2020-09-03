@@ -1,0 +1,7 @@
+FROM mariadb
+WORKDIR /isaziproj
+ENV bruce
+ENV wayne
+EXPOSE 3307
+COPY . .
+CMD ["bruce", "run"]
